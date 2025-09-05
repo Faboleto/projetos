@@ -1,0 +1,1 @@
+Todos os projetos aqui inseridos foram utilizados em produção. Porém, estão modificados com apenas alguns exemplos de cargas e queries, não possuindo todo o conteúdo que foi de fato utilizado.

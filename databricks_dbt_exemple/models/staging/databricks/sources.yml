@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: databricks
+    database: system
+    schema: billing
+    tables:
+      - name: list_prices
+        description: ''
+      - name: usage
+        description: ''

@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: twilio
+    database: twilio
+    schema: default
+    tables:
+      - name: messages
+        description: ""

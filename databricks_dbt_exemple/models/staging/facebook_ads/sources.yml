@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: facebook_ads
+    database: facebook_ads
+    schema: default
+    tables:
+      - name: ads_insights
+        description: Tabela vinda do Facebook Ads.
+      - name: ads
+        description: Tabela vinda do Facebook Ads.
+      - name: campaigns
+        description: Tabela vinda do Facebook Ads.

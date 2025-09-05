@@ -1,0 +1,10 @@
+
+version: 2
+
+models:
+  - name: stg_fb__ads_insights
+    description: ""
+  - name: stg_fb__ads
+    description: ""
+  - name: stg_fb__campaigns
+    description: ""

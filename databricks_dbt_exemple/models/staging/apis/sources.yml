@@ -1,0 +1,7 @@
+sources:
+  - name: apis
+    database: main
+    schema: landing
+    tables:
+      - name: lnd_sheets__ads_cost_pivot
+        description: Tabela com custos de influenciadores pivotado.

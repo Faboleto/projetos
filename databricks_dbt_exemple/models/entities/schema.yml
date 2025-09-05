@@ -1,0 +1,30 @@
+
+version: 2
+
+models:
+  - name: fact__coupons_finished
+    description: ""
+    columns:
+      - name: coupon_id
+        data_tests:
+          - not_null
+          - unique
+  - name: dim__users_banned
+    description: ""
+    columns:
+      - name: user_id
+        data_tests:
+          - unique
+
+
+
+    
+
+
+
+    
+  
+
+
+
+    

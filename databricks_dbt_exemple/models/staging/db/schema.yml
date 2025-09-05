@@ -1,0 +1,364 @@
+
+version: 2
+
+models:
+  - name: stg_db__coupons
+    description: "Tabela coupons vinda de landing"
+    columns:
+      - name: coupon_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__coupon_items
+    description: "Tabela coupon_items vinda de landing"
+    columns:
+      - name: coupon_item_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__challenges
+    description: "Tabela challenges vinda de landing"
+    columns:
+      - name: challenge_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__users
+    description: "Tabela users vinda de landing"
+    columns:
+      - name: user_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__external_players
+    description: "Tabela external_players vinda de landing"
+    columns:
+      - name: external_player_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__challenge_odds
+    description: "Tabela challenge_odds vinda de landing"
+    columns:
+      - name: challenge_odd_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__accounts
+    description: "Tabela accounts vinda de landing"
+    columns:
+      - name: account_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__external_match_players
+    description: "Tabela external_match_players vinda de landing"
+    columns:
+      - name: external_match_player_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__gateway_transactions
+    description: "Tabela gateway_transactions vinda de landing"
+    columns:
+      - name: gateway_transaction_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__grouped_challenges
+    description: "Tabela grouped_challenges vinda de landing"
+    columns:
+      - name: grouped_challenge_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__external_matches
+    description: "Tabela external_matches vinda de landing"
+    columns:
+      - name: external_match_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__external_matches_cs2
+    description: "Tabela external_matches vinda de landing"
+    columns:
+      - name: external_match_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__external_matches_cs2_faceit
+    description: "Tabela external_matches vinda de landing"
+    columns:
+      - name: external_match_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__external_matches_lol
+    description: "Tabela external_matches vinda de landing"
+    columns:
+      - name: external_match_id
+        data_tests:
+          - not_null
+          - unique
+  
+  - name: stg_db__external_matches_val
+    description: "Tabela external_matches vinda de landing"
+    columns:
+      - name: external_match_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__external_matches_tft
+    description: "Tabela external_matches vinda de landing"
+    columns:
+      - name: external_match_id
+        data_tests:
+          - not_null
+          - unique
+  
+  - name: stg_db__league_entrances
+    description: "Tabela league_entrances vinda de landing"
+    columns:
+      - name: league_entrance_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__league_points
+    description: "Tabela league_points vinda de landing"
+    columns:
+      - name: league_point_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__league_prize_schemas
+    description: "Tabela league_prize_schemas vinda de landing"
+    columns:
+      - name: league_prize_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__league_tickets
+    description: "Tabela league_tickets vinda de landing"
+    columns:
+      - name: league_ticket_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__leagues
+    description: "Tabela leagues vinda de landing"
+    columns:
+      - name: league_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__machines
+    description: "Tabela machines vinda de landing"
+    columns:
+      - name: unique_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__missions
+    description: "Tabela missions vinda de landing"
+    columns:
+      - name: mission_id
+        data_tests:
+          - not_null
+          - unique
+          
+  - name: stg_db__odds_boosters
+    description: "Tabela odds_boosters vinda de landing"
+    columns:
+      - name: odd_booster_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__spins
+    description: "Tabela spin vinda de landing"
+    columns:
+      - name: spin_id
+        data_tests:
+          - not_null
+          - unique
+          
+  - name: stg_db__players
+    description: "Tabela players vinda de landing"
+    columns:
+      - name: player_id
+        data_tests:
+          - not_null
+          - unique
+          
+  - name: stg_db__redeem_items
+    description: "Tabela redeem_items vinda de landing"
+    columns:
+      - name: redeem_item_id
+        data_tests:
+          - not_null
+          - unique
+          
+  - name: stg_db__referrals
+    description: "Tabela referrals vinda de landing"
+    columns:
+      - name: referred_id
+        data_tests:
+          - not_null
+          - unique
+          
+  - name: stg_db__reputation_scores
+    description: "Tabela reputation_scores vinda de landing"
+    columns:
+      - name: reputation_score_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__rollovers
+    description: "Tabela rollovers vinda de landing"
+    columns:
+      - name: rollover_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__sessions
+    description: "Tabela sessions vinda de landing"
+    columns:
+      - name: session_id
+        data_tests:
+          - not_null
+          - unique
+          
+  - name: stg_db__super_tips
+    description: "Tabela super_tips vinda de landing"
+    columns:
+      - name: super_tip_id
+        data_tests:
+          - not_null
+          - unique
+          
+  - name: stg_db__ticket_subject_types
+    description: "Tabela ticket_subject_types vinda de landing"
+    columns:
+      - name: ticket_subject_type_id
+        data_tests:
+          - not_null
+          - unique
+          
+  - name: stg_db__ticket_subjects
+    description: "Tabela ticket_subjects vinda de landing"
+    columns:
+      - name: ticket_subject_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__transaction_items
+    description: "Tabela transaction_items vinda de landing"
+    columns:
+      - name: transaction_item_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__transactions
+    description: "Tabela transactions vinda de landing"
+    columns:
+      - name: transaction_id
+        data_tests:
+          - not_null
+          - unique
+          
+  - name: stg_db__user_missions
+    description: "Tabela user_missions vinda de landing"
+    columns:
+      - name: user_mission_id
+        data_tests:
+          - not_null
+          - unique
+          
+  - name: stg_db__user_notes
+    description: "Tabela user_notes vinda de landing"
+    columns:
+      - name: user_notes_id
+        data_tests:
+          - not_null
+          - unique
+          
+  - name: stg_db__user_redeem_items
+    description: "Tabela user_redeem_items vinda de landing"
+    columns:
+      - name: user_redeem_item_id
+        data_tests:
+          - not_null
+          - unique
+          
+  - name: stg_db__users_blocklist
+    description: "Tabela users_blocklist vinda de landing"
+    columns:
+      - name: user_blocklist_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__wallets
+    description: "Tabela wallets vinda de landing"
+    columns:
+      - name: wallet_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__user_offers
+    description: "Tabela user_offers vinda de landing"
+    columns:
+      - name: user_offer_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__admin_ticket_profiles
+    description: ""
+    columns:
+      - name: admin_ticket_profile_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__max_amount_overrides
+    description: ""
+    columns:
+      - name: max_amount_override_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_db__margin_overrides
+    description: ""
+    columns:
+      - name: margin_override_id
+        data_tests:
+          - not_null
+          - unique
+  

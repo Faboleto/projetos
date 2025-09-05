@@ -1,0 +1,1 @@
+{{ pivot_influencers(source_relation=ref('stg_sheets__ads_cost_base'), date_column='reference_date') }}

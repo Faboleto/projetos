@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: db
+    database: main
+    schema: landing
+    tables:
+      - name: lnd_db_v2__accounts
+        description: Tabela em landing com o registro de accounts.  

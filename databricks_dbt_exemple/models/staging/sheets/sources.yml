@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: db
+    database: main
+    schema: landing
+    tables:
+      - name: lnd_sheets_v2__daily_spend_base
+        description: Tabela em landing com o registro de custos de influencers.
+      - name: lnd_sheets__ads_cost
+        description: Tabela em landing com o registro de custos de influencers.

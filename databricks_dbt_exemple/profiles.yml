@@ -1,0 +1,36 @@
+databricks_dbt:
+   target: "{{ env_var('TARGET') }}"
+   outputs:
+     prod:
+      type: databricks
+      method: http
+      threads: 8
+      catalog: main
+      schema: staging
+      host: ######.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/637b081813888d1c
+      compute:
+        Small: 
+          http_path: /sql/1.0/warehouses/637b081813888d1c
+        Medium:
+          http_path: /sql/1.0/warehouses/41eb53f2596f1852
+        XSmall:
+          http_path: /sql/1.0/warehouses/45e9fe979809a35a
+      token: "{{ env_var('DBT_ACCESS_TOKEN') }}"
+
+     dev_staging:
+      type: databricks
+      method: http
+      threads: 8
+      catalog: dev_staging
+      schema: staging
+      host: ######.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/637b081813888d1c
+      compute:
+        Small: 
+          http_path: /sql/1.0/warehouses/637b081813888d1c
+        Medium:
+          http_path: /sql/1.0/warehouses/41eb53f2596f1852
+        XSmall:
+          http_path: /sql/1.0/warehouses/45e9fe979809a35a
+      token: "{{ env_var('DBT_ACCESS_TOKEN') }}"

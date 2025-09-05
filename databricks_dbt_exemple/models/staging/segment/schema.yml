@@ -1,0 +1,20 @@
+
+version: 2
+
+models:
+  - name: stg_sgt__google_ads_campaigns
+    description: ""
+  - name: stg_sgt__google_ads_campaign_performance_reports
+    description: ""
+  - name: stg_sgt__facebook_ads_campaigns
+    description: ""
+  - name: stg_sgt__facebook_ads_insights
+    description: ""
+  - name: stg_sgt__facebook_ads_ads
+    description: ""
+  - name: stg_sgt__pages
+    description: ""
+  - name: stg_sgt__id_graph_updates
+    description: ""
+  - name: stg_sgt__user_identifiers
+    description: ""

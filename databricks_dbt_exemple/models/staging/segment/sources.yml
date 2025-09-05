@@ -1,0 +1,77 @@
+version: 2
+
+sources:
+  - name: sgt_site
+    database: segment
+    schema: segment_site_prod
+    tables:
+      - name: pages
+        description: Tabela vinda da segment com dados do site.
+  - name: sgt_google_ads
+    database: segment
+    schema: segment_google_ads_tipspace
+    tables:
+      - name: campaigns
+        description: Tabela vinda da segment com dados do google ads.
+      - name: campaign_performance_reports
+        description: Tabela vinda da segment com dados do google ads.
+  - name: sgt_facebook_ads
+    database: segment
+    schema: segment__facebook_ads
+    tables:
+      - name: campaigns
+        description: Tabela vinda da segment com dados do google ads.
+      - name: insights
+        description: Tabela vinda da segment com dados do google ads.
+      - name: ads
+        description: Tabela vinda da segment com dados do google ads.
+  - name: sgt_unify
+    database: segment
+    schema: segment_unify
+    tables:
+      - name: id_graph_updates
+        description: Tabela vinda da segment.
+      - name: pages
+        description: Tabela vinda da segment.
+      - name: user_identifiers
+        description: Tabela vinda da segment.
+      - name: first_match_finished
+        description: Tabela vinda da segment.
+      - name: coupon_created
+        description: Tabela vinda da segment.
+      - name: user_logged_in
+        description: Tabela de eventos S2S com eventos de login dos usuários.
+      - name: user_attribution_gtm
+        description: Tabela vinda da segment.
+      - name: deposit_confirmed
+        description: Tabela eventos S2S com eventos de confirmação de depósito.
+      - name: user_traits
+        description: ""
+      - name: profile_merges
+        description: ""
+      - name: first_login
+        description: ""
+      - name: mobile_attribution
+        description: ""
+  - name: sgt_old_schema
+    database: segment
+    schema: segment_old_schema
+    tables:
+      - name: id_graph_updates
+        description: Tabela vinda da segment.
+      - name: pages
+        description: Tabela vinda da segment.
+      - name: user_identifiers
+        description: Tabela vinda da segment.
+      - name: google_ads__ad_groups
+        description: Tabela vinda da segment.
+      - name: google_ads__ad_performance_reports
+        description: Tabela vinda da segment.
+      - name: google_ads__ads
+        description: Tabela vinda da segment.
+      - name: google_ads__campaign_performance_reports
+        description: Tabela vinda da segment.
+      - name: google_ads__campaigns
+        description: Tabela vinda da segment.
+      - name: google_ads__click_performance_reports
+        description: Tabela vinda da segment.

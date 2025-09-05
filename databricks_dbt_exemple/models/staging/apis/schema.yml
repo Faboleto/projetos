@@ -1,0 +1,33 @@
+
+version: 2
+
+models:
+  - name: stg_apis__sheets_ads_cost_pivot
+    description: "Tabela de custos vinda do google sheets"
+  - name: stg_apis__formsquash_pmf
+    description: ""
+    columns:
+      - name: formsquash_pmf_id
+        data_tests:
+          - not_null
+          - unique
+  - name: stg_apis__formsquash_csat_support
+    description: ""
+    columns:
+      - name: csat_support_id
+        data_tests:
+          - not_null
+          - unique
+  - name: stg_apis__formsquash_csat_total
+    description: ""
+    columns:
+      - name: csat_total_id
+        data_tests:
+          - not_null
+          - unique
+  - name: stg_apis__dolar_exchange
+    description: ""
+    columns:
+      - name: exchange
+        data_tests:
+          - not_null
